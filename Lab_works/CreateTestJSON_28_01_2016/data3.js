@@ -54,7 +54,7 @@
 		for (var i = 0; i < stage.length; i++) {
 			arrAnswers[i] = stage[i].value;
 
-			if (rightAnswers[i] == arrAnswers[i]) { 	// compare user's answers with right answers
+			if (rightAnswers[i] === arrAnswers[i]) { 	// compare user's answers with right answers
 				j++;									// начисление баллов
 			}
 		}

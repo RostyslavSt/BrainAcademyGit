@@ -1,0 +1,10 @@
+.buttonMain {
+  color: #ffaabb;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }
+  .buttonMain:hover {
+    background-color: green; }
+
+.font-color {
+  color: blue; }

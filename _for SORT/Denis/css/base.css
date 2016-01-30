@@ -1,0 +1,118 @@
+html,
+body{
+    height: 100%;
+}
+
+.wrapper{
+    display: table;
+    width: 100%;
+    min-height: 100%;
+}
+    .page-container{
+        display: table-row;
+        height: 100%;
+    }
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-header{
+    padding: 20px 0;
+    background: #ccc;
+}
+
+.content-container{
+    overflow: hidden;
+}
+
+.sidebar{
+    float: left;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.page-content{
+    overflow: hidden;
+    padding: 20px;
+    background: #eee;
+}
+h1{
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.animated{
+    width: 50px;
+    height: 50px;
+    animation-name: bgclranimate;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgclranimate{
+    0% {
+        background: yellow;
+    }
+
+    100% {
+        background: green;
+    }
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.page-footer{
+    padding: 12px 0;
+    background: #3d3d3d;
+}
+
+@media all and (max-width: 640px) {
+    .sidebar{
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

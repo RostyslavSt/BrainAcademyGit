@@ -49,7 +49,7 @@
 	function UsersAnswers() {
 		var arrAnswers = [];
 		var rightAnswers = ['<h1>','parse','stringify','split']; 	// array with rigth answers
-		var j = 0; 										//счетчик для начисления баллов за правильные ответы.
+		var j = 0; 												//счетчик для начисления баллов за правильные ответы.
 		var stage = document.begin.elements;
 		for (var i = 0; i < stage.length; i++) {
 			arrAnswers[i] = stage[i].value;

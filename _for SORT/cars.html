@@ -35,19 +35,15 @@
 			<button name="buttSubm">Submit</button>
 	</form>
 
-
-
-
-		
-
-
 	<script type="text/javascript">
+		// Добавить новый элемент
 		var el = document.getElementsByTagName('ul')[0];
 		//console.log(el.cloneNode(true));
 		var newLi = document.createElement('li');
 		newLi.innerText = 'mazda';
 		el.insertBefore(newLi,el.children[1]);
-		
+
+		// Событие
 		document.getElementById('okButton').onclick = function(){alert('3434');}
 		document.getElementById('okButton').addEventListener('click', function(ev){ev.stopPropagation()});
 
@@ -102,13 +98,11 @@
 			
 			//server
 			var xhr = new XMLHttpRequest();
-
 			xhr.open("GET","http://188.226.135.96:9876/json?file=rshtets.json",true);
 			xhr.onreadystatechange = function()	{
 				if (xhr.readyState == 4) {
 					console.log(xhr.responseText);
 				}
-				
 			}
 			xhr.send();
 			

@@ -5,9 +5,14 @@
 
 			}
 
+			.wrapper {
+				overflow: hidden;
+
+			}
+
+
 			aside {
-				float: left;
-				width: 30px;
+				overflow: hidden;
 				height: 100px;
 				background-color: yellow;
 
@@ -15,8 +20,9 @@
 
 			main {
 				height:500px;
-				width: 65%;
-
+				float: left;
+				width: 30%;
+				background-color: blue;
 			}	
 
 			footer {
@@ -26,16 +32,22 @@
 			}	
 
 
-			@media all and (min-width:768) and (max-width:959) {
+			@media all and (min-width:768px) and (max-width:959px) {
 				header {
 					height:80px;
 				}
 
 			}
 
-			@media all and (min-width:768) and (max-width:959) {
+			@media (max-width:767px) {
 				header {
-					height:80px;
+					background-color: black;
+				}
+
+				aside {
+					overflow: hidden;
+					height: 100px;
+					background-color: yellow;
 				}
 
 			}

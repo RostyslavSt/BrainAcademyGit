@@ -1,0 +1,36 @@
+p {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+
+.new {
+	color: yellow;
+}
+
+div p {
+	color: green;
+}
+
+.main {
+	color: blue;
+}
+
+
+a:visited {
+	color: red;
+}
+
+a:hover {
+	color: yellow;
+}
+
+a:link {
+	color:black;
+}
+
+div:hover {
+	color: blue;
+}

@@ -1,0 +1,45 @@
+h1 {
+	border: 2px solid blue;
+	}
+
+p {
+	text-indent: 20px;
+	color: grey;
+	font-family: Verdana;
+	font-size: 10px;
+	text-align: left;
+
+}
+
+.new {
+	text-indent: 20px;
+	background-color: green;
+	font-style: italic;
+	color: black;
+}
+
+.new2{
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-style: arial;
+	text-transform: uppercase;
+	color: grey;
+}
+
+.bord {
+	 border: 1px;
+	 border-style: solid;
+	 border-color: green;
+	 border-width: 5px;
+	 padding: 5px;
+	 margin: 30px;
+
+}

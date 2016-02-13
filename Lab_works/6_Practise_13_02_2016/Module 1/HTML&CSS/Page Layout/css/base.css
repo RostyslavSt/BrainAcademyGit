@@ -1,0 +1,55 @@
+html,
+body{
+    height: 100%;
+}
+
+.wrapper{
+    display: table;
+    width: 100%;
+    min-height: 100%;
+}
+    .page-container{
+        display: table-row;
+        height: 100%;
+    }
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-header{
+    padding: 20px 0;
+    background: #ccc;
+}
+
+.content-container{
+    overflow: hidden;
+}
+
+.sidebar{
+    float: left;
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.page-content{
+    overflow: hidden;
+    padding: 20px;
+    background: #eee;
+}
+
+.page-footer{
+    padding: 12px 0;
+    background: #3d3d3d;
+}
+
+@media all and (max-width: 640px) {
+    .sidebar{
+        float: none;
+        width: 100%;
+    }
+}

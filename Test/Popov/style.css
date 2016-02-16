@@ -1,0 +1,86 @@
+h1 {
+	border: 2px solid blue;
+	}
+
+header {
+		height: 200px;
+		background-color: red;
+		margin-bottom: 15px;
+	}
+
+.wrapper {
+	border-style: solid;
+	border: 2px;
+} 
+
+p {
+	text-indent: 20px;
+	color: black;
+	font-family: Verdana;
+	font-size: 10px;
+	text-align: left;
+	background-color: grey;
+
+}
+
+form {
+	width: 500px;
+	cursor: pointer;
+}
+
+input:hover {
+	background-color: yellow;
+}
+
+input:focus {
+	background-color: grey;
+}
+
+input {
+	padding:0 0 0 10px;
+}
+
+.new {
+	margin-top: 20px;
+}
+
+.new2{
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font-style: arial;
+	text-transform: uppercase;
+	color: blue;
+	background-image: url("https://academy.oracle.com/en/oa-assets/i/cw22/cw22-cloud.jpg");
+}
+
+.bord {
+
+	 border: 1px;
+	 border-style: solid;
+	 border-color: green;
+	 border-width: 5px;
+	 padding: 20px;
+	 margin: 20px auto 5px auto;
+	 width: 700px;
+}
+
+.look {
+	display: block;
+	color: blue;
+	font: bold;
+	font-size: 12px;
+}
+.line{
+	border: 1px;
+	border-style: solid;
+	border-color: black;
+	display: inline;
+}

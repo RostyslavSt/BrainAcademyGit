@@ -1,5 +1,5 @@
 			header {
-				height: 100px;
+				height: 200px;
 				background-color: red;
 				margin-bottom: 15px;
 
@@ -7,34 +7,41 @@
 
 			.wrapper {
 				overflow: hidden;
+				font-size: 34px;
 
 			}
+
+		main {
+				height:500px;
+				float: left;
+				width: 50%;
+				background-color: blue;
+				border-style: solid;
+				border-width: 1px;
+			}	
 
 
 			aside {
 				overflow: hidden;
 				height: 100px;
 				background-color: yellow;
-
+				border-style: solid;
+				border-width: 3px;
+				
 			}
 
-			main {
-				height:500px;
-				float: left;
-				width: 30%;
-				background-color: blue;
-			}	
-
+			
 			footer {
 				height: 100px;
 				background-color: green;
-				margin-top: 15 px;
+				margin-top: 15px;
+
 			}	
 
 
 			@media all and (min-width:768px) and (max-width:959px) {
 				header {
-					height:80px;
+					height:150px;
 				}
 
 			}
@@ -42,14 +49,18 @@
 			@media (max-width:767px) {
 				header {
 					background-color: black;
+					height:50px;
 				}
 
 				aside {
 					overflow: hidden;
 					height: 100px;
-					background-color: yellow;
+					background-color: blue;
 				}
 
+			.wrapper {
+				font-size: 9px;
+			}
 			}
 
 		

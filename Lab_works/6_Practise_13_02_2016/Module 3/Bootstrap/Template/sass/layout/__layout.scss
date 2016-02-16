@@ -15,14 +15,7 @@ html, body{
 display: block;
 }
 
-.slider {
-	height:577px;
-	background: #7db9e8; /* Old browsers */
-	background: -moz-linear-gradient(top, #7db9e8 -1%, #1e5799 0%, #7db9e8 0%, #207cca 0%, #7db9e8 0%, #7db9e8 1%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #7db9e8 -1%,#1e5799 0%,#7db9e8 0%,#207cca 0%,#7db9e8 0%,#7db9e8 1%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #7db9e8 -1%,#1e5799 0%,#7db9e8 0%,#207cca 0%,#7db9e8 0%,#7db9e8 1%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 
-}
 
 @import "header";
 @import "content";

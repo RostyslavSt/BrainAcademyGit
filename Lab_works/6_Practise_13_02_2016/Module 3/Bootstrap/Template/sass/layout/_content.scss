@@ -32,6 +32,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	max-width: 700px; 
+	min-width: 40%;
    }
 
 .slide-title {
@@ -88,3 +89,149 @@
 		}
 }
 
+.text-block {
+	display: table;
+	width:100%;
+	max-width: 100%;
+	table-layout: fixed;
+	min-height: 245px;
+	
+	padding-left: 84px;
+	box-sizing: border-box;
+
+	font-size: 30px;
+
+	background: #27212c;
+
+	color: #9282a0;
+	line-height: 1.2;
+
+	@media all and (min-width: 980px) and (max-width: 1023px) {
+			padding-left: 64px;
+			min-height: 234px;
+			font-size: 26px;
+			
+		}
+
+		@media all and (min-width: 640px) and (max-width: 979px) {
+			padding-left: 44px;
+			min-height: 153px;
+			font-size: 26px;
+			
+		}
+
+		@media all and (min-width: 320px) and (max-width: 639px) {
+			padding-left: 44px;
+			min-height: 77px;
+			font-size: 20px;
+		}
+
+
+	.text {
+		margin:0;
+	}
+}
+
+
+.cell {
+		
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+.link-container {
+	width: 245px;
+	text-align: center;
+
+	color: #fff;
+	line-height: 1;
+	font-size: 30px;
+
+	background: #bc3183;
+	transition: width ease 350ms;
+
+
+	@media all and (min-width: 980px) and (max-width: 1023px) {
+			width: 220px;
+			font-size: 40px;
+			
+		}
+
+		@media all and (min-width: 640px) and (max-width: 979px) {
+			width: 140px;
+			font-size: 30px;
+			
+		}
+
+		@media all and (min-width: 320px) and (max-width: 639px) {
+			width: 70px;
+			font-size: 20px;
+		}
+	
+}
+
+.gallery {
+	display: table;
+	width:100%;
+	max-width: 100%;
+	table-layout: fixed;
+	overflow: hidden;
+
+	@media all and (min-width: 640px)  {
+		display: block;
+	}
+			
+	&-item {
+		width: 33.3%;
+
+		color: #fff;
+		font-size: 30px;
+		line-height: 1.2;
+		text-align: center;
+		background: #5b0fa1;
+
+		@media all and (max-width: 640px) {
+		width: auto;
+		display: block;
+		font-size: 60px;
+		}
+
+		@media all and (min-width: 320px) and (max-width: 479px) {
+		font-size: 30px;
+		}
+	}
+
+	&-image {
+		max-width: 100%;
+		vertical-align: middle;
+	}
+}	
+
+.text-item {
+	.link {
+		line-height: 1.2;
+	}
+
+	@media all and (max-width: 640px) {
+		height: 555px;
+		line-height: 555px;
+	}
+
+	@media all and (min-width: 320px) and (max-width: 479px) {
+		height: 278px;
+		line-height: 278px;
+	}
+
+}
+
+.link {
+	color: inherit;
+	font-family: 'Quicksand', sans-serif;
+
+	&:hover,
+	&:active,
+	&:focus {
+		outline: none;
+		text-decoration: none;
+	}
+}

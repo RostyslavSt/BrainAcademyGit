@@ -6192,6 +6192,70 @@ html, body {
 .no-js .is-no-js {
   display: block; }
 
+body {
+  font-family: 'montserratregular'; }
+
+.header {
+  background-color: #333; }
+  .header-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1; }
+    .header-nav-item {
+      position: relative;
+      margin-left: 12px;
+      float: left; }
+      .header-nav-item:first-child {
+        margin-left: 0; }
+      .header-nav-item:hover > .dropdown-nav {
+        display: block; }
+    .header-nav-link {
+      display: block;
+      padding: 6px 10px;
+      color: inherit;
+      transition: color ease 350ms; }
+      .header-nav-link:hover, .header-nav-link-active {
+        color: #00b3ee; }
+    .header-nav .dropdown-nav {
+      display: none;
+      position: absolute;
+      top: 100%;
+      /*leave child's left side after parent's right side*/
+      left: 0;
+      z-index: 2;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #333;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.2;
+      /*it could be in 2 rows*/ }
+      .header-nav .dropdown-nav-item, .header-nav .dropdown-nav-link {
+        display: block;
+        position: relative;
+        white-space: nowrap; }
+      .header-nav .dropdown-nav-link {
+        padding: 6px 12px;
+        color: inherit;
+        transition: color ease 350ms; }
+        .header-nav .dropdown-nav-link:hover, .header-nav .dropdown-nav-link-active {
+          color: #00b3ee; }
+      .header-nav .dropdown-nav .dropdown-nav {
+        background-color: red;
+        top: 0;
+        left: 100%; }
+        .header-nav .dropdown-nav .dropdown-nav-item:hover > .dropdown-nav {
+          display: block; }
+        .header-nav .dropdown-nav .dropdown-nav .dropdown-nav {
+          display: none; }
+          .header-nav .dropdown-nav .dropdown-nav .dropdown-nav-item:hover > .dropdown-nav {
+            display: block;
+            background-color: #00b3ff; }
+
 .slider {
   background: #7db9e8;
   /* Old browsers */
@@ -6379,3 +6443,29 @@ html, body {
 
 .text {
   margin: 0 0 40px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.5); }
+
+.popup {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.4); }
+  .popup-header, .popup-content, .popup-footer {
+    padding: 12px; }
+  .popup-header, .popup-content {
+    border-bottom: 1px solid #eee; }

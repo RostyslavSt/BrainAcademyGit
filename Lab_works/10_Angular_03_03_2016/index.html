@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app='myApp'>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div>
+      <label>Name:</label>
+      <input type="text" ng-model="yourName" placeholder="Enter a name here">
+      <hr>
+      <h1>Hello {{yourName}}!</h1>
+    </div>
+    <div ng-controller="myController">
+      <ul>
+        <li ng-repeat="n in myData track by $index">{{n}}</li>
+      </ul>
+      <input type="text" ng-model="newValue"></input>
+      <button ng-click="addValue()">Add</button>
+    </div>
+
+
+
+
+  </body>
+</html>
+

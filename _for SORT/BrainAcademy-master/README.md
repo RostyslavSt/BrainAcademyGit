@@ -1,3 +1,0 @@
-# BrainAcademy
-
-Repository for BrainAcademy
